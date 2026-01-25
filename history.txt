@@ -1,0 +1,6 @@
+#V2
+ls
+load-packages data/mirror
+load-packages data/mirror.csclub.uwaterloo.ca_debian_dists_sid_main_binary-amd64_Packages
+load-installed data/installed-packages
+cargo check

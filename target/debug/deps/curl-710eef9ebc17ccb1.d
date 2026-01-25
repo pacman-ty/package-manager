@@ -1,0 +1,17 @@
+/home/ty/projects/package-management/target/debug/deps/curl-710eef9ebc17ccb1.d: /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/lib.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/error.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/version.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/mod.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/form.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/handle.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/handler.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/list.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/windows.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/multi.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/panic.rs
+
+/home/ty/projects/package-management/target/debug/deps/libcurl-710eef9ebc17ccb1.rmeta: /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/lib.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/error.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/version.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/mod.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/form.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/handle.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/handler.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/list.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/windows.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/multi.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/panic.rs
+
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/lib.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/error.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/version.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/mod.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/form.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/handle.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/handler.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/list.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/easy/windows.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/multi.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/curl-0.4.42/src/panic.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.4.42

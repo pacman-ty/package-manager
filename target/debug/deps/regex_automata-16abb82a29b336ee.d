@@ -1,0 +1,12 @@
+/home/ty/projects/package-management/target/debug/deps/regex_automata-16abb82a29b336ee.d: /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/lib.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/byteorder.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/classes.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/dense.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/dfa.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/regex.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/sparse.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/state_id.rs
+
+/home/ty/projects/package-management/target/debug/deps/libregex_automata-16abb82a29b336ee.rmeta: /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/lib.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/byteorder.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/classes.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/dense.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/dfa.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/regex.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/sparse.rs /home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/state_id.rs
+
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/lib.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/byteorder.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/classes.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/dense.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/dfa.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/regex.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/sparse.rs:
+/home/ty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.1.10/src/state_id.rs:

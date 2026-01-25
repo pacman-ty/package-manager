@@ -1,9 +1,6 @@
 # Package management sample code
 
-This code implements some package management functions (like Debian's apt) in Rust. I wrote it as assignment code for
-ECE 459: Programming for Performance, to give students experience with writing nontrivial code in Rust.
-
-You can load sets of available and installed packages and then perform dependency queries on these sets of packages.
+This code implements some package management functions (like Debian's apt) in Rust. You can load sets of available and installed packages and then perform dependency queries on these sets of packages.
 
 ## Initialization
 
