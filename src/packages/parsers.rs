@@ -5,6 +5,7 @@ use std::path::Path;
 use regex::Regex;
 
 use crate::Packages;
+use crate::packages::Dependency;
 use crate::packages::RelVersionedPackageNum;
 
 use rpkg::debversion;
@@ -64,28 +65,70 @@ impl Packages {
                     // do more things with ip
                     match kv_regexp.captures(&ip) {
                         None => (),
-                        Some(cap) => {
-                            let (key, value) = (caps.name("key").unwrap().as_str(),
-                                                caps.name("value").unwrap().as_str());
+                        Some(caps) => {
+                            let (key, value) = (
+                                caps.name("key").unwrap().as_str(),
+                                caps.name("value").unwrap().as_str(),
+                            );
 
                             if key == "Package" {
                                 current_package_num = self.get_package_num_inserting(&value);
                             }
                             else if key == "Version" {
-                                let debver = value.trim().parse::<debversion::DebianVersionNum>().unwrap();
+                                let debver = value
+                                    .trim()
+                                    .parse::<debversion::DebianVersionNum>()
+                                    .unwrap();
                                 self.available_debvers.insert(current_package_num, debver);
                             }
                             else if key == "MD5sum" {
-                                self.md5sums.insert(current_package_num, &value);
+                                self.md5sums.insert(current_package_num, value.to_string());
                             }
                             else if key == "Depends" {
+                                let mut dependencies: Vec<Dependency> = Vec::new();
 
+                                for dep_str in value.split(',') {
+                                    let mut alternatives: Dependency = Vec::new();
+
+                                    for alt_str in dep_str.split('|') {
+                                        let alt_trimmed = alt_str.trim();
+
+                                        match pkgver_regexp.captures(alt_trimmed) {
+                                            None => (),
+                                            Some(alt_caps) => {
+                                                let pkg_name = alt_caps.name("pkg").unwrap().as_str();
+                                                let pkg_num = self.get_package_num_inserting(pkg_name);
+                                                // Check if there's a version constraint
+                                                let rel_version = match (
+                                                    alt_caps.name("op"),
+                                                    alt_caps.name("ver"),
+                                                ) {
+                                                    (Some(op), Some(ver)) => {
+                                                        let version_rel = op
+                                                            .as_str()
+                                                            .parse::<debversion::VersionRelation>()
+                                                            .unwrap();
+                                                        let version_str = ver.as_str().to_string();
+                                                        Some((version_rel, version_str))
+                                                    }
+                                                    _ => None,
+                                                };
+ 
+                                                alternatives.push(RelVersionedPackageNum {
+                                                    package_num: pkg_num,
+                                                    rel_version: rel_version,
+                                                });
+                                            }
+                                        }
+                                    }
+                                    if !alternatives.is_empty() {
+                                        dependencies.push(alternatives);
+                                    }
+                                }
+                                self.dependencies.insert(current_package_num, dependencies);
                             }
                         }
                     }
-
-
-
                 }
             }
         }

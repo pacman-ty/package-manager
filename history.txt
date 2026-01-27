@@ -4,3 +4,19 @@ load-packages data/mirror
 load-packages data/mirror.csclub.uwaterloo.ca_debian_dists_sid_main_binary-amd64_Packages
 load-installed data/installed-packages
 cargo check
+ld
+quit
+ld
+quit
+ld
+deps-available 4g8
+quit 
+cargo run 
+quit 
+ld
+file:///home/ty/Downloads/Lab1.pd
+[200~transitive-dep-solution libzydis-dev
+transitive-dep-solution libzydis-dev
+[200~how-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depict
+how-to-install 3depict
+quit
