@@ -22,6 +22,29 @@ impl Packages {
             for line in lines {
                 if let Ok(ip) = line {
                     // do something with ip
+                    match kv_regexp.captures(&ip) {
+                        None => (),
+                        // caps if of the Captures type and we are "unwrapping" to use 
+                        Some(caps) => {
+                            let (key, value) = (caps.name("key").unwrap().as_str(),
+                                                caps.name("value").unwrap().as_str());
+                            
+                            // Store each package in two hashmaps. Each package maps to a unique
+                            // i32. package_name_to_num is a hashmap where each key is sequential
+                            // i32 and the value is the package name, and installed_debvers is a
+                            // hashmap where the same unqiue i32 for the package is the key but the
+                            // value is the package Version.
+                            // Looking up integer values is faster which is why we hash packages in
+                            // this way. 
+                            if key == "Package" {
+                                current_package_num = self.get_package_num_inserting(&value);
+                            }
+                            else if key == "Version" {
+                                let debver = value.trim().parse::<debversion::DebianVersionNum>().unwrap();
+                                self.installed_debvers.insert(current_package_num, debver);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -39,6 +62,30 @@ impl Packages {
             for line in lines {
                 if let Ok(ip) = line {
                     // do more things with ip
+                    match kv_regexp.captures(&ip) {
+                        None => (),
+                        Some(cap) => {
+                            let (key, value) = (caps.name("key").unwrap().as_str(),
+                                                caps.name("value").unwrap().as_str());
+
+                            if key == "Package" {
+                                current_package_num = self.get_package_num_inserting(&value);
+                            }
+                            else if key == "Version" {
+                                let debver = value.trim().parse::<debversion::DebianVersionNum>().unwrap();
+                                self.available_debvers.insert(current_package_num, debver);
+                            }
+                            else if key == "MD5sum" {
+                                self.md5sums.insert(current_package_num, &value);
+                            }
+                            else if key == "Depends" {
+
+                            }
+                        }
+                    }
+
+
+
                 }
             }
         }

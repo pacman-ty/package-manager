@@ -1,0 +1,49 @@
+#V2
+ip
+li
+lp
+load-installed
+quit
+ld
+ld data/installed-packages
+quite
+quit
+ld
+li
+li bash
+quit
+ld
+quit 
+ip
+li
+li zoom
+ld
+quit 
+li data/installed-packages
+ld
+quit 
+ld
+li data/installed-packages
+ld 
+quit 
+ld
+li
+li installed-packages
+li data/installed-packages
+ld
+li
+quit 
+load-installed data/installed-packages
+quit
+li data/packages-installed
+li data/installed-packages
+quit
+li data/installed-packages
+quit
+ld 
+li data/installed-packages
+installed-packages
+quit
+li installed-packages
+li data/installed-packages
+quit
