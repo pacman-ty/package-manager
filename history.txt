@@ -20,3 +20,11 @@ transitive-dep-solution libzydis-dev
 [200~how-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depicthow-to-install 3depict
 how-to-install 3depict
 quit
+set-server ece459.patricklam.ca:4590
+load-csv data/packages.csv
+enq-verify bash
+enq-verify 0ad
+quit
+load-csv data/packages.csv
+enq-verify libc6 28
+quit
